@@ -13,5 +13,24 @@ documentation for details.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Contents: table1
+
+    patent/passport
+    patent/content
+    patent/introduction
+    patent/choice
+    patent/matplotlib
+    patent/seaborn
+    patent/plotly
+    patent/justific
+    patent/rec
+    patent/analysis
+    patent/table1
+    patent/conclusion
+
+
+
+
+
+
 
