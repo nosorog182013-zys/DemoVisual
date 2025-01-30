@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Дипломная работа'
-copyright = '2025, Сергей Зацаринный'
+copyright: str = '2025, Сергей Зацаринный'
 author = 'Сергей Зацаринный'
 release = '1.0'
 
