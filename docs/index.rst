@@ -14,17 +14,17 @@ documentation for details.
 .. toctree::
    :maxdepth: 2
 
-    passport
-    content
-    introduction
-    choice
-    matplotlib
-    seaborn
-    plotly
-    justific
-    rec
-    analysis
-    conclusion
+    patent/passport
+    patent/content
+    patent/introduction
+    patent/choice
+    patent/matplotlib
+    patent/seaborn
+    patent/plotly
+    patent/justific
+    patent/rec
+    patent/analysis
+    patent/conclusion
 
 
 
