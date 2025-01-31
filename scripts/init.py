@@ -11,5 +11,5 @@ https://docs.google.com/document/d/1i4R_EbINhBnbfXReXiWJflzoM0yqXwr6ytVCRKLLQO8/
 def main():
     pass
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
