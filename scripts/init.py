@@ -11,6 +11,5 @@ https://docs.google.com/document/d/1i4R_EbINhBnbfXReXiWJflzoM0yqXwr6ytVCRKLLQO8/
 def main() -> object:
     pass
 
-
 if __name__ == "__main__":
     main()
