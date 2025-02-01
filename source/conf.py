@@ -10,9 +10,8 @@ import datetime
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Дипломная работа'
-author = 'Серней Зацаринный'
+author = 'Сергей Зацаринный'
 copyright = "%s CC-BY-SA, %s" % (datetime.date.today().year, author)
-release = '1.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -33,7 +32,6 @@ language = 'ru'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'alabaster'
-html_static_path = ['source/_static']
 templates_path = ['source/_templates']
 # Adds custom JavaScript files, located under 'html_static_path'
 # html_js_files = []
