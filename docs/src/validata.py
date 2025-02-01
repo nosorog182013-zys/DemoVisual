@@ -15,4 +15,4 @@ def validate_data(df):
   return df_cleaned
 
 data_validated = validate_data(data)
-#print(data_validated)
+print(data_validated)
