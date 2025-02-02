@@ -1,13 +1,12 @@
 import matplotlib.pyplot as plt
 import numpy as np
-
-# Вспомогательная функция
+# Вспомогательная функция.
 def my_plotter(ax, data1, data2, param_dict):
    out = ax.plot(data1, data2, **param_dict)
    return out
-# 4 произвольных набора данных
+# Определяем 4 произвольных набора данных.
 data1, data2 = np.random.randn(2, 100)
-
+# Рисуем 2 непрерывных графика.
 fig, ax = plt.subplots(figsize=(5, 2.7))
 x = np.arange(len(data1))
 ax.plot(x, np.cumsum(data1), color='blue', linewidth=3, linestyle='--')

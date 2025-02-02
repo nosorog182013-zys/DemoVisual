@@ -1,10 +1,10 @@
 import seaborn as sns
 import matplotlib.pyplot as plt
-# применяем тему картинок по умолчанию
+# Применяем тему картинок по умолчанию.
 sns.set_theme()
-# загружаем набор данных
+# Загружаем набор данных.
 tips = sns.load_dataset("tips")
-# создаем визуализацию
+# Создаем визуализацию
 sns.relplot(
    data=tips,
    x="total_bill", y="tip", col="time",

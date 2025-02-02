@@ -9,13 +9,5 @@
 .. toctree::
     :maxdepth: 2
 
-    patent/introduction
-    patent/choice
-    patent/matplot_con
-    patent/sea_born_con
-    patent/plot_con
-    patent/justific
-    patent/req
-    patent/analysis
-    patent/conclusion
+    src/validata
 

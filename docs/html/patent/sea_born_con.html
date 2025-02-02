@@ -302,11 +302,11 @@ Matplotlib.
 Рассмотрим пример построения графика из руководства <a class="reference external" href="https://seaborn.pydata.org/tutorial/introduction.html">https://seaborn.pydata.org/tutorial/introduction.html</a></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-<span class="c1"># применяем тему картинок по умолчанию</span>
+<span class="c1"># Применяем тему картинок по умолчанию.</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">set_theme</span><span class="p">()</span>
-<span class="c1"># загружаем набор данных</span>
+<span class="c1"># Загружаем набор данных.</span>
 <span class="n">tips</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;tips&quot;</span><span class="p">)</span>
-<span class="c1"># создаем визуализацию</span>
+<span class="c1"># Создаем визуализацию</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">relplot</span><span class="p">(</span>
    <span class="n">data</span><span class="o">=</span><span class="n">tips</span><span class="p">,</span>
    <span class="n">x</span><span class="o">=</span><span class="s2">&quot;total_bill&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;tip&quot;</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="p">,</span>
