@@ -44,6 +44,7 @@ extensions = [
     "canonical_sphinx",
     "sphinxcontrib.cairosvgconverter",
     "sphinx_last_updated_by_git",
+    "sphinx.ext.autodoc",
 ]
 
 exclude_patterns = [

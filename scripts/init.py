@@ -6,8 +6,6 @@
 для сравнения. Дипломная работа представлена здесь:
 https://docs.google.com/document/d/1i4R_EbINhBnbfXReXiWJflzoM0yqXwr6ytVCRKLLQO8/edit?usp=sharing
 """
-
-
 def main():
     pass
 
