@@ -3,10 +3,11 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Алфавитный указатель" href="../genindex.html" /><link rel="search" title="Поиск" href="../search.html" /><link rel="next" title="3.2. Seaborn." href="sea_born_con.html" /><link rel="prev" title="2. Выбор библиотек Python." href="choice.html" />
+
+    <meta property="article:modified_time" content="2025-02-02T01:41:14+08:00" /><link rel="index" title="Алфавитный указатель" href="../genindex.html" /><link rel="search" title="Поиск" href="../search.html" /><link rel="next" title="3.2. Seaborn." href="sea_born_con.html" /><link rel="prev" title="2. Выбор библиотек Python." href="choice.html" />
 
     <link rel="shortcut icon" href="../_static/favicon.png"/><!-- Generated with Sphinx 7.4.7 and Furo 2024.08.06 -->
-        <title>3. Детальный разбор библиотек - документация Дипломная работа</title>
+        <title>3.1. Matplotlib. - документация Дипломная работа</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="../_static/youtube.css?v=4e28cee6" />
@@ -203,7 +204,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -227,7 +228,8 @@
   <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Введение.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="choice.html">2. Выбор библиотек Python.</a></li>
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">3. Детальный разбор библиотек</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choice.html#id1">3. Детальный разбор библиотек</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">3.1. Matplotlib.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sea_born_con.html">3.2. Seaborn.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plot_con.html">3.3. Plotly.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="justific.html">4. Обоснование критериев выбора библиотек.</a></li>
@@ -254,7 +256,13 @@
           <span>Back to top</span>
         </a>
         <div class="content-icon-container">
-          <div class="theme-toggle-container theme-toggle-content">
+          <div class="view-this-page">
+  <a class="muted-link" href="../_sources/patent/matplot_con.rst.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
             <button class="theme-toggle">
               <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
               <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
@@ -263,19 +271,14 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="id1">
-<h1>3. Детальный разбор библиотек<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h1>
-<p>Остановимся на библиотеках Matplotlib, Plotly, Seaborn. Данные библиотеки были выбраны для
-анализа из-за их уникальных возможностей, популярности в сообществе и разнообразия задач,
-которые они решают.</p>
-<section id="matplotlib">
-<h2>3.1. Matplotlib.<a class="headerlink" href="#matplotlib" title="Ссылка на этот заголовок">¶</a></h2>
+          <section id="matplotlib">
+<h1>3.1. Matplotlib.<a class="headerlink" href="#matplotlib" title="Ссылка на этот заголовок">¶</a></h1>
 <p>Matplotlib - это библиотека Python, которая облегчает создание двумерных графиков для
 массивов данных. Хотя она была разработана как средство эмуляции графических команд языка
 MATLAB, она не зависит от MATLAB и может быть использована объектно-ориентированной среде
@@ -287,7 +290,13 @@ macOS, Windows и Linux на <a class="reference external" href="https://pypi.or
 Самый простой способ создания рисунка с осями - это использование pyplot.subplots. Затем
 можно использовать Axes.plot, чтобы нарисовать некоторые данные на осях, и show, чтобы
 отобразить рисунок:</p>
-<p>fig.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
 <p>С графиком можно взаимодействовать, масштабировать фигуру с графиком, масштабировать сам
 график с помощью отдельного меню или клавиш позиционирования. Здесь показана фигура с
 размерами по умолчанию.
@@ -298,10 +307,21 @@ macOS, Windows и Linux на <a class="reference external" href="https://pypi.or
 «специальных художников” Artists (заголовки, легенды фигур, цветные полосы и т. д.) и даже
 вложенные под-фигуры.
 Обычно фигура создается с помощью одной из следующих функций:</p>
-<p>fig1.</p>
-<p>fig2.</p>
-<p>fig3.</p>
-<p>fig4.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="c1"># пустая фигура без координат</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="c1"># фигура с координатами</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="c1"># фигура с сеткой координат 2х2</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="c1"># фигура с одной координатой слева и двумя координатами справа</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot_mosaic</span><span class="p">([[</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="s1">&#39;right_top&#39;</span><span class="p">],</span>
+                              <span class="p">[</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="s1">&#39;right_bottom&#39;</span><span class="p">]])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+</pre></div>
+</div>
 <p>subplots() и subplot_mosaic - это удобные функции, которые дополнительно создают объекты
 координаты внутри фигуры, но можно вручную добавить координаты позже.
 Координаты “Axes” это объект, прикрепленный к рисунку, который содержит область для построения
@@ -325,27 +345,74 @@ numpy.asarray. Классы, похожие на массивы, такие ка
 могут работать не так, как предполагалось. Обычно принято преобразовывать их в объекты
 numpy.array перед построением графика.
 Преобразование матрицы numpy.matrix в numpy.array:</p>
-<p>fig.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+<span class="n">b_asarray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
 <p>Большинство методов также анализируют индексируемые в строку объекты, такие как dict,
 структурированный массив numpy или pandas.DataFrame. Matplotlib позволяет указывать ключевой
 аргумент data и строить графики, передавая строки, соответствующие переменным x и y.</p>
-<p>fig.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="c1"># запускаем генератор случайных чисел</span>
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">19680801</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span>
+       <span class="s1">&#39;c&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">),</span>
+       <span class="s1">&#39;d&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">50</span><span class="p">)}</span>
+<span class="n">data</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="mi">10</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">data</span><span class="p">[</span><span class="s1">&#39;d&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;d&#39;</span><span class="p">])</span> <span class="o">*</span> <span class="mi">100</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mf">2.7</span><span class="p">),</span> <span class="n">layout</span><span class="o">=</span><span class="s1">&#39;constrained&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;entry a&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;entry b&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+</pre></div>
+</div>
 <p>Если нужно строить одни и те же графики снова и снова с разными наборами данных или контейнер
 Matplotlib, можно использовать рекомендуемую ниже сигнатурную функцию.</p>
-<p>fig.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="c1"># Вспомогательная функция</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">my_plotter</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">data1</span><span class="p">,</span> <span class="n">data2</span><span class="p">,</span> <span class="n">param_dict</span><span class="p">):</span>
+   <span class="n">out</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">data1</span><span class="p">,</span> <span class="n">data2</span><span class="p">,</span> <span class="o">**</span><span class="n">param_dict</span><span class="p">)</span>
+   <span class="k">return</span> <span class="n">out</span>
+<span class="c1"># 4 произвольных набора данных</span>
+<span class="n">data1</span><span class="p">,</span> <span class="n">data2</span><span class="p">,</span> <span class="n">data3</span><span class="p">,</span> <span class="n">data4</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">fig</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mf">2.7</span><span class="p">))</span>
+<span class="n">my_plotter</span><span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">data1</span><span class="p">,</span> <span class="n">data2</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;marker&#39;</span><span class="p">:</span> <span class="s1">&#39;x&#39;</span><span class="p">})</span>
+<span class="n">my_plotter</span><span class="p">(</span><span class="n">ax2</span><span class="p">,</span> <span class="n">data3</span><span class="p">,</span> <span class="n">data4</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;marker&#39;</span><span class="p">:</span> <span class="s1">&#39;o&#39;</span><span class="p">})</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
 <p>Стили Artists, большинство методов черчения имеют опции стилизации для Artists, доступные
 либо при вызове метода черчения, либо из «сеттера» Artist. В приведенном ниже графике вручную
 установлен цвет, ширина линии и стиль линии для Artist, созданных методом plot, а стиль
 второй линии установлен уже после этого с помощью set_linestyle. Добавим фрагмент кода в
 предыдущий и получим для data1 и data2 другой стиль графика.</p>
-<p>fig.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="c1"># Вспомогательная функция</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">my_plotter</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">data1</span><span class="p">,</span> <span class="n">data2</span><span class="p">,</span> <span class="n">param_dict</span><span class="p">):</span>
+   <span class="n">out</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">data1</span><span class="p">,</span> <span class="n">data2</span><span class="p">,</span> <span class="o">**</span><span class="n">param_dict</span><span class="p">)</span>
+   <span class="k">return</span> <span class="n">out</span>
+<span class="c1"># 4 произвольных набора данных</span>
+<span class="n">data1</span><span class="p">,</span> <span class="n">data2</span><span class="p">,</span> <span class="n">data3</span><span class="p">,</span> <span class="n">data4</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">fig</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mf">2.7</span><span class="p">))</span>
+<span class="n">my_plotter</span><span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">data1</span><span class="p">,</span> <span class="n">data2</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;marker&#39;</span><span class="p">:</span> <span class="s1">&#39;x&#39;</span><span class="p">})</span>
+<span class="n">my_plotter</span><span class="p">(</span><span class="n">ax2</span><span class="p">,</span> <span class="n">data3</span><span class="p">,</span> <span class="n">data4</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;marker&#39;</span><span class="p">:</span> <span class="s1">&#39;o&#39;</span><span class="p">})</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
 <p>Matplotlib имеет очень гибкий набор цветов, который подходит для большинства Artists.
 Ширина линий, стили линий и размеры маркеров, ширина линий обычно указывается в типографских
 пунктах (1 пт = 1/72 дюйма) и доступна для Artists, имеющих строчные линии. Аналогично,
 строчные линии могут иметь стиль линии.
 Здесь рассмотрена часть руководства пользователя под названием “Quick start guide”, полное
 руководство находится по адресу <a class="reference external" href="https://matplotlib.org/stable/users/index.html">https://matplotlib.org/stable/users/index.html</a></p>
-</section>
 </section>
 
         </article>
@@ -385,7 +452,12 @@ Matplotlib, можно использовать рекомендуемую ни�
         Copyright &#169; 2025 CC-BY-SA, Сергей Зацаринный
     </div>
 
-    
+    <div class="last-updated">
+      Last updated on февр. 02, 2025</div>
+    <div class="show-source">
+      <a class="muted-link" href="../_sources/patent/matplot_con.rst.txt"
+         rel="nofollow">Show source</a>
+    </div>
   </div>
   <div>
    
@@ -413,7 +485,7 @@ Matplotlib, можно использовать рекомендуемую ни�
 
       </footer>
     </div>
-    <aside class="toc-drawer">
+    <aside class="toc-drawer no-toc">
       
 <div class="toc-sticky toc-scroll">
    
@@ -425,10 +497,7 @@ Matplotlib, можно использовать рекомендуемую ни�
     <div class="toc-tree-container">
       <div class="toc-tree">
         <ul>
-<li><a class="reference internal" href="#">3. Детальный разбор библиотек</a><ul>
-<li><a class="reference internal" href="#matplotlib">3.1. Matplotlib.</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#">3.1. Matplotlib.</a></li>
 </ul>
 
       </div>
