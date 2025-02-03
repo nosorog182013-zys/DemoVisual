@@ -12,7 +12,7 @@
     <option name="versionSpecifier" value="Don't specify version" />
   </component>
   <component name="ReSTService">
-    <option name="DOC_DIR" value="$MODULE_DIR$" />
+    <option name="DOC_DIR" value="$MODULE_DIR$/src" />
     <option name="TXT_IS_RST" value="true" />
   </component>
 </module>
