@@ -13,8 +13,7 @@ documentation for details.
 
 .. toctree::
     :maxdepth: 2
-    :caption: Документ
 
-    usage/validata
+    ../src/usage/validata
 
 
