@@ -14,6 +14,6 @@ documentation for details.
 .. toctree::
     :maxdepth: 2
 
-    ../src/usage/validata
+    ./validata
 
 
